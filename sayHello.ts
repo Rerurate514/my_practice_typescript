@@ -1,6 +1,5 @@
-let arr : number[] = []
-arr.push(432)
-arr.push(5435)
-arr.pop()
+const arr = ['adwafa','thfh','y54','bdx 5yer',':@p:p@pp'];
 
-console.log(arr)
+arr.forEach((name) => {
+    console.log(name)
+})

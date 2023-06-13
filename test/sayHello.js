@@ -1,7 +1,10 @@
 "use strict";
-let arr = [];
-arr.push(432);
-arr.push(5435);
-arr.pop();
-console.log(arr);
+const arr = ['adwafa', 'thfh', 'y54', 'bdx 5yer', ':@p:p@pp'];
+arr.forEach((name) => {
+    console.log(name);
+});
+window.confirm = () => {
+    console.log('confirm');
+    return true;
+};
 //# sourceMappingURL=sayHello.js.map
