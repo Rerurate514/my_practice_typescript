@@ -156,3 +156,12 @@ const gg : Identify = {
 }
 
 console.log(ff.id + "\t" +  gg.name)
+
+type Employee = Id & Contact
+
+const employee : Employee = {
+    id: '111',
+    name: '4325',
+    email: '324r',
+    phone: 4326546
+}
