@@ -41,22 +41,57 @@ const cc: ColorFulCircle = {
     radius: 10
 }
 
-console.log(cc);
+console.log(cc)
 
 class PointClass {
-    x: number = 0;
-    y: number = 0;
+    x: number = 0
+    y: number = 0
 
     constructor(_x: number=0, _y:number=0){
-        this.x = _x;
-        this.y = _y;
+        this.x = _x
+        this.y = _y
     }
 
     printPoint(): void {
-        console.log("x = " + this.x + " ,y = " + this.y);
+        console.log("x = " + this.x + " ,y = " + this.y)
     }
 }
 
-const aa: PointClass = new PointClass(421,532);
+const aa: PointClass = new PointClass(421,532)
 
 aa.printPoint()
+
+class Point3D extends PointClass {
+    z: number = 0
+
+    constructor(_x: number = 0, _y:number = 0, _z: number = 0){
+        super(_x,_y)
+        this.z = _z
+    }
+
+    print3Dpoint(): void {
+        console.log("x = " + this.x + " , y = " + this.y + ", z = " + this.z)
+    }
+}
+
+const bb3d = new Point3D(123,421,41)
+
+bb3d.print3Dpoint()
+
+const DirectionJs = {
+    'Up': 0,
+    'right': 1,
+    'down': 2,
+    'left': 3
+}
+
+enum Direction {
+    Up,
+    right,
+    down,
+    left
+}
+
+let dirctionEnum = Direction.right
+
+console.log(dirctionEnum)
