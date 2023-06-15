@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "build": "tsc file.ts --sourceMap --outDir dist"
+    }
+}
