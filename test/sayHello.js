@@ -20,4 +20,17 @@ const cc = {
     radius: 10
 };
 console.log(cc);
+class PointClass {
+    constructor(_x = 0, _y = 0) {
+        this.x = 0;
+        this.y = 0;
+        this.x = _x;
+        this.y = _y;
+    }
+    printPoint() {
+        console.log("x = " + this.x + ",y = " + this.y);
+    }
+}
+const aa = new PointClass(421, 532);
+aa.printPoint();
 //# sourceMappingURL=sayHello.js.map

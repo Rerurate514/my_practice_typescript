@@ -42,3 +42,21 @@ const cc: ColorFulCircle = {
 }
 
 console.log(cc);
+
+class PointClass {
+    x: number = 0;
+    y: number = 0;
+
+    constructor(_x: number=0, _y:number=0){
+        this.x = _x;
+        this.y = _y;
+    }
+
+    printPoint(): void {
+        console.log("x = " + this.x + " ,y = " + this.y);
+    }
+}
+
+const aa: PointClass = new PointClass(421,532);
+
+aa.printPoint()
