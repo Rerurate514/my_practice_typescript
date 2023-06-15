@@ -165,3 +165,12 @@ const employee : Employee = {
     email: '324r',
     phone: 4326546
 }
+
+let qq : 'qwerty' | 'asdfgh' | 'zxcvbn'
+
+
+function error(message: string): never{
+    throw new Error(message)
+}
+
+error('error')

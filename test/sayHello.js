@@ -98,4 +98,15 @@ const gg = {
     phone: 4432
 };
 console.log(ff.id + "\t" + gg.name);
+const employee = {
+    id: '111',
+    name: '4325',
+    email: '324r',
+    phone: 4326546
+};
+let qq;
+function error(message) {
+    throw new Error(message);
+}
+error('error');
 //# sourceMappingURL=sayHello.js.map
