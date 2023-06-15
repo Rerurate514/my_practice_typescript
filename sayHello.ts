@@ -169,8 +169,16 @@ const employee : Employee = {
 let qq : 'qwerty' | 'asdfgh' | 'zxcvbn'
 
 
-function error(message: string): never{
-    throw new Error(message)
-}
+// function error(message: string): never{
+//     throw new Error(message)
+// }
 
-error('error')
+//error('error')
+
+interface User{
+    name: string
+    social?: {
+        facebook: Boolean
+        twitter: Boolean
+    }
+}//Optional chaining -> ? is undefinable
