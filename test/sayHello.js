@@ -78,6 +78,24 @@ dd.push(43);
 dd.push(5);
 dd.push(252);
 dd.push(54);
-let str = dd.pop();
-console.log(str);
+let strnum = dd.pop();
+console.log(strnum);
+let ee = new Queue();
+ee.push('aa');
+ee.push('aa34');
+ee.push('aa643');
+ee.push('aa58');
+ee.push('a124a6');
+let str14 = ee.pop();
+console.log(str14);
+const ff = {
+    id: '4234',
+    name: '#5few'
+};
+const gg = {
+    name: '43243',
+    email: 't4t',
+    phone: 4432
+};
+console.log(ff.id + "\t" + gg.name);
 //# sourceMappingURL=sayHello.js.map
