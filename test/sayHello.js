@@ -105,8 +105,16 @@ const employee = {
     phone: 4326546
 };
 let qq;
-function error(message) {
-    throw new Error(message);
+const key1 = 'name';
+const key2 = 'email';
+function getProperty(obj, key) {
+    return obj[key];
 }
-error('error');
+const user11 = {
+    name: 'takku',
+    age: 532,
+    email: 'test@example.com'
+};
+const userName = getProperty(user11, 'name');
+console.log(userName);
 //# sourceMappingURL=sayHello.js.map

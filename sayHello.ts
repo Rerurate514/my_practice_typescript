@@ -181,4 +181,27 @@ interface User{
         facebook: Boolean
         twitter: Boolean
     }
-}//Optional chaining -> ? is undefinable
+}//Optional chaining -> ? is undefinable]
+
+interface User2{
+    name: string
+    age: number
+    email: string
+}
+type UserKey = keyof User2 // 'name' | 'age' | 'email'
+
+const key1: UserKey = 'name'
+const key2: UserKey = 'email'
+
+function getProperty<T, K extends keyof T>(obj: T, key: K) :T[K]{
+    return obj[key]
+} 
+
+const user11 : User2 = {
+    name: 'takku',
+    age: 532,
+    email: 'test@example.com'
+}
+
+const userName = getProperty(user11,'name')
+console.log(userName)
