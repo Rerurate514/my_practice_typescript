@@ -86,12 +86,37 @@ const DirectionJs = {
 }
 
 enum Direction {
-    Up,
-    right,
-    down,
-    left
+    Up = 'Up',
+    right = 'Right',
+    down = 'Down',
+    lef = 'Left'
 }
 
 let dirctionEnum = Direction.right
 
 console.log(dirctionEnum)
+
+class Queue<T> {
+    private array: T[] = []
+
+    push(item :T){
+        this.array.push(item)
+    }
+
+    pop(): T | undefined {
+        return this.array.shift()
+    }
+}
+
+let dd = new Queue<number>()
+
+dd.push(43252)
+dd.push(546)
+dd.push(43)
+dd.push(5)
+dd.push(252)
+dd.push(54)
+
+let str = dd.pop()
+console.log(str)
+

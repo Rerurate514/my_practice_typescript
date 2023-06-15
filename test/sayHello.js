@@ -53,11 +53,31 @@ const DirectionJs = {
 };
 var Direction;
 (function (Direction) {
-    Direction[Direction["Up"] = 0] = "Up";
-    Direction[Direction["right"] = 1] = "right";
-    Direction[Direction["down"] = 2] = "down";
-    Direction[Direction["left"] = 3] = "left";
+    Direction["Up"] = "Up";
+    Direction["right"] = "Right";
+    Direction["down"] = "Down";
+    Direction["lef"] = "Left";
 })(Direction || (Direction = {}));
 let dirctionEnum = Direction.right;
 console.log(dirctionEnum);
+class Queue {
+    constructor() {
+        this.array = [];
+    }
+    push(item) {
+        this.array.push(item);
+    }
+    pop() {
+        return this.array.shift();
+    }
+}
+let dd = new Queue();
+dd.push(43252);
+dd.push(546);
+dd.push(43);
+dd.push(5);
+dd.push(252);
+dd.push(54);
+let str = dd.pop();
+console.log(str);
 //# sourceMappingURL=sayHello.js.map
